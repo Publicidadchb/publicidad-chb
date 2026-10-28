@@ -1,4 +1,30 @@
-# Conectar casa y oficina — reunion del 28 de octubre de 2026
+# Conectar casa y oficina — reunión del 28 de octubre de 2026
+
+## Empezar aquí: guion para seguir juntos durante la reunión
+
+Todo lo que puede prepararse desde casa está guardado en este repositorio. La recuperación real y la conexión se harán cuando la persona de la empresa esté delante del Windows. No es necesario que esa persona programe: puede pegar el mensaje del apartado siguiente en Codex.
+
+Antes de empezar, tener ambos ordenadores con Internet, la aplicación de escritorio abierta y acceso a la misma cuenta de ChatGPT y al mismo espacio de trabajo. Mantener el Windows conectado a la corriente. El proyecto y las sesiones de Google de la oficina deben conservarse.
+
+| Paso | Quién lo hace | Acción | Qué debe comprobarse antes de seguir |
+| --- | --- | --- | --- |
+| 1 | Persona de la oficina | Abrir Codex en el Windows donde se hizo la auditoría y abrir esta guía. | Es el equipo que contiene los originales; se ve la cuenta y el espacio de trabajo correctos. |
+| 2 | Persona de la oficina | Pegar en Codex el **mensaje para el Windows** incluido más abajo. Esperar a que termine la preparación. | Codex localiza los originales, valida SQLite y muestra el respaldo creado. Si informa de un error, resolverlo allí antes de dar la base por recuperada. |
+| 3 | Persona de la oficina | Abrir la carpeta clonada como proyecto local en Codex, si aún no aparece como tal. Comunicar en la reunión el nombre del equipo y del proyecto. | El proyecto apunta al clon preparado y contiene la base principal bajo `private/`; la demostración no se usa como histórico. |
+| 4 | Persona de la oficina | En la aplicación, entrar en **Configuración / Settings → Conexiones / Connections → Controlar este PC / Control this PC** e iniciar la configuración que aparezca. Revisar y confirmar las autorizaciones en pantalla. | La aplicación permite conexiones al Windows y presenta el flujo de emparejamiento. |
+| 5 | Persona de casa | En el Mac, entrar en **Configuración / Settings → Conexiones / Connections → Controlar otros dispositivos / Control other devices**. Agregar el Windows siguiendo el flujo visible en ambos equipos. | El Windows aparece como equipo accesible. Si esa opción no existe, seguir el apartado de incidencias. |
+| 6 | Persona de casa | Seleccionar el Windows y el proyecto de auditoría como lugar de trabajo. Pegar el **mensaje de comprobación** de esta guía. | Los comandos se ejecutan en el Windows y leen la base recuperada. |
+| 7 | Ambas personas | Comparar el resumen de validación y comprobar el mismo archivo de prueba bajo `private/reunion/`. | Desde casa se lee la base real y la persona de la oficina ve el archivo creado en ese Windows. Solo entonces dar la conexión por comprobada. |
+| 8 | Ambas personas | Acordar que las actualizaciones reales se harán sobre ese proyecto del Windows, con respaldo previo a cada importación. | Los trabajos de casa y oficina quedan en la misma base principal. El Windows permanece disponible mientras se trabaja desde casa. |
+
+## Si algún paso no coincide con la pantalla
+
+- **No aparece “Controlar otros dispositivos”:** comunicar lo que se ve en Configuración → Conexiones. La disponibilidad depende de la aplicación y del espacio de trabajo. No dar por hecha una conexión alternativa; habrá que configurarla y comprobarla expresamente.
+- **No encuentra la base original:** pedir a Codex de la oficina que localice `chavez_auditoria.sqlite` y la carpeta `auditoria_chavez` en ese Windows. Con la ruta comprobada, ejecutar el preparador con `--source`. Mantener los originales intactos.
+- **Aparecen varias bases:** comparar procedencia y fechas con Codex, conservar todas y elegir explícitamente la principal. Una base vacía o de demostración no sirve como recuperación.
+- **Se pierde la conexión:** comprobar que el Windows sigue encendido, con Internet y con la aplicación abierta. No continuar las importaciones sobre una copia distinta en casa.
+
+El mensaje completo y las comprobaciones están a continuación. No hace falta habilitar acceso remoto antes de la reunión.
 
 ## Resultado que se busca
 
