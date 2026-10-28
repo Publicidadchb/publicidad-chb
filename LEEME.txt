@@ -1,0 +1,7 @@
+PUBLICIDAD CHB — CONTINUIDAD DEL PROYECTO
+
+Leer README.md, AGENTS.md y docs/CONTINUAR_EN_CODEX.md.
+Preparar: python3 scripts/setup.py (Windows: py -3 scripts/setup.py).
+Recuperar en el equipo original: python3 scripts/restore_private.py.
+El histórico real está pendiente de recuperación. La demostración usa datos ficticios.
+private/, raw/, bases SQLite, informes y credenciales no se publican ni se sincronizan con Git.

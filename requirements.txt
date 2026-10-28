@@ -1,0 +1,2 @@
+# No external packages. Runtime and tests use the Python 3.10+ standard library.
+# sqlite3, unittest, decimal, csv, json and zipfile ship with Python.
