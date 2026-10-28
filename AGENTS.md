@@ -4,6 +4,8 @@
 
 Leer README.md, docs/MIGRACION.md y docs/CONTINUAR_EN_CODEX.md antes de trabajar. Es una herramienta local Python/SQLite. El código se recuperó del trabajo original; la base histórica real está pendiente de recuperación desde su ordenador de origen. Nunca confundir la demostración con datos de la empresa.
 
+Para trabajo entre casa y oficina, leer docs/REUNION_CASA_OFICINA.md. La propuesta es usar el Windows de la empresa como equipo central con una única base principal y acceder remotamente desde casa. Esta conexión todavía necesita emparejamiento y verificación. No afirmar que los datos se sincronizan por usar la misma cuenta, ni crear dos bases históricas independientes esperando que Git las mezcle. Antes de declarar conectado, comprobar el equipo real de ejecución, la ruta y la lectura de la base desde casa. El preparador de oficina no habilita acceso remoto y no sustituye esta comprobación.
+
 ## Preparación y comprobaciones
 
 - Requiere Python 3.10+ con sqlite3 y venv. No hay dependencias externas del programa.

@@ -199,6 +199,36 @@ class PipelineTests(unittest.TestCase):
         self.assertIn('github_token', inspect('config.txt', fake_token))
         self.assertEqual(inspect('demo.py', "account_key='synthetic'"), [])
 
+    def test_meeting_preparation_rejects_demo_and_empty_database(self):
+        from scripts.prepare_office import check_historical_database
+        with self.assertRaisesRegex(ValueError, 'vacia'):
+            check_historical_database(self.db)
+        with self.c:
+            audit.import_ui(self.c, self.write_document(demo.document()))
+        with self.assertRaisesRegex(ValueError, 'cuentas de Google'):
+            check_historical_database(self.db)
+
+    def test_meeting_backup_preserves_source_and_does_not_claim_connection(self):
+        from scripts.prepare_office import prepare_snapshot
+        root = self.folder/'office'
+        database = root/'private'/'chavez_auditoria.sqlite'
+        fixture = demo.document()
+        fixture['service'] = 'google_ads'
+        connection = audit.connect(database)
+        try:
+            with connection:
+                audit.import_ui(connection, self.write_document(fixture))
+        finally:
+            connection.close()
+        before = database.read_bytes()
+        first = prepare_snapshot(root)
+        second = prepare_snapshot(root)
+        self.assertFalse(first['remote_connection_confirmed'])
+        self.assertEqual(first['validation']['tables']['runs'], 1)
+        self.assertNotEqual(first['backup'], second['backup'])
+        self.assertTrue(Path(first['backup']).is_file())
+        self.assertEqual(before, database.read_bytes())
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,5 +1,7 @@
 # Continuar el proyecto desde otro ordenador
 
+Para compartir el trabajo diario de casa y oficina sobre una misma base principal, seguir primero [REUNION_CASA_OFICINA.md](REUNION_CASA_OFICINA.md). Los pasos de clonación de esta guía permiten editar el código localmente; el histórico privado permanece en el equipo central hasta que se acuerde y configure otra arquitectura.
+
 ## Apertura en Codex
 
 Instalar Git y Python 3.10+ si no están disponibles. Clonar `https://github.com/Publicidadchb/publicidad-chb.git` en una carpeta propia. En la aplicación de escritorio, seleccionar Codex y abrir esa carpeta como proyecto local. Las instrucciones del proyecto se guardan en `AGENTS.md`.

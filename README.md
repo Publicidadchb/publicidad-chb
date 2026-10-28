@@ -38,6 +38,8 @@ En Windows, usar `.venv\Scripts\python.exe` en lugar de `.venv/bin/python`.
 
 ## Continuar desde otro ordenador con Codex
 
+Para trabajar desde casa y la oficina sobre la misma base, seguir [la guia de conexion para la reunion](docs/REUNION_CASA_OFICINA.md). Incluye un mensaje para pegar en Codex del Windows original y el lanzador `PREPARAR_OFICINA.cmd`. La conexion entre equipos sigue pendiente de emparejamiento; GitHub conserva el codigo y los datos privados permanecen en el equipo central.
+
 Clonar este repositorio, abrir su carpeta como proyecto local de Codex y pedirle que siga `AGENTS.md` y [la guía de continuidad](docs/CONTINUAR_EN_CODEX.md). Esa guía contiene un mensaje listo para pegar, instrucciones de recuperación local y el flujo de sincronización sin sobrescrituras forzadas.
 
 En el ordenador donde se creó la auditoría, el recuperador puede localizar el directorio original automáticamente:
@@ -56,6 +58,7 @@ En Windows: `py -3 scripts/restore_private.py`. Recupera los originales a `priva
 | `demo.py`, `test_pipeline.py` | Datos ficticios y pruebas reproducibles |
 | `scripts/setup.py` | Preparación del entorno y comprobación |
 | `scripts/restore_private.py` | Recuperación local de los originales del equipo de origen |
+| `PREPARAR_OFICINA.cmd`, `scripts/prepare_office.py` | Preparación en el Windows original y respaldo privado para la reunión |
 | `scripts/check_public.py` | Detección de artefactos privados y patrones habituales de credenciales antes de publicar |
 | `docs/CONTINUAR_EN_CODEX.md` | Apertura, recuperación, importación y sincronización |
 | `docs/MIGRACION.md` | Procedencia, cambios y límites de esta entrega |
