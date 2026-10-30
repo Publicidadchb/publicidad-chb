@@ -1,6 +1,8 @@
 # Continuar el proyecto desde otro ordenador
 
-Para compartir el trabajo diario de casa y oficina sobre una misma base principal, seguir primero [REUNION_CASA_OFICINA.md](REUNION_CASA_OFICINA.md). Los pasos de clonación de esta guía permiten editar el código localmente; el histórico privado permanece en el equipo central hasta que se acuerde y configure otra arquitectura.
+Decisión vigente del usuario, 30 de octubre de 2026: **no es necesario recuperar la base original para continuar**. Conservar el PDF de la auditoría anterior y los documentos existentes. Se podrá realizar una nueva auditoría a partir de Google Ads cuando el usuario abra y autorice el acceso a la cuenta.
+
+Clonar el repositorio permite editar el código localmente. El acceso a los mismos documentos privados desde casa y la oficina se debe comprobar aparte; no queda configurado por usar la misma cuenta o clonar GitHub. [REUNION_CASA_OFICINA.md](REUNION_CASA_OFICINA.md) conserva una propuesta anterior de conexión remota, de uso opcional.
 
 ## Apertura en Codex
 
@@ -8,7 +10,7 @@ Instalar Git y Python 3.10+ si no están disponibles. Clonar `https://github.com
 
 Mensaje listo para pegar en ese ordenador:
 
-> Prepara este clon siguiendo AGENTS.md. Ejecuta scripts/setup.py con Python 3.10 o posterior; si python no está en PATH, comprueba el intérprete del entorno de Codex. En este ordenador busca los originales con scripts/restore_private.py. Si los encuentra, conserva las fuentes, verifica SQLite y usa private/chavez_auditoria.sqlite. Si no los encuentra, comunica que falta el histórico real; utiliza solo la demostración para validar el programa. Ejecuta las pruebas y scripts/check_public.py. Conserva el historial de Git y usa pull --ff-only; no uses force push. No publiques private/, bases, informes, fuentes, cuentas ni credenciales.
+> Prepara este clon siguiendo AGENTS.md. Ejecuta scripts/setup.py con Python 3.10 o posterior; si python no está en PATH, comprueba el intérprete del entorno de Codex. Conserva los archivos existentes y usa el PDF como antecedente. La recuperación de la base original es opcional: no la exijas ni bloquees el trabajo por su ausencia. Cuando abra Google Ads y autorice su lectura, comprueba el acceso efectivo a la cuenta y realiza una nueva auditoría con evidencia fechada y fuentes auténticas. Distingue las lecturas nuevas, el informe anterior y la demostración ficticia. No cambies campañas, presupuestos ni configuración. Ejecuta las pruebas y scripts/check_public.py. Conserva el historial de Git y usa pull --ff-only; no uses force push. No publiques private/, bases, informes, fuentes, cuentas ni credenciales. Comprueba por separado la continuidad de los archivos vigentes entre casa y oficina antes de declarar sincronización.
 
 Esta apertura de una carpeta local y el uso de `AGENTS.md` están documentados por OpenAI: [inicio](https://learn.chatgpt.com/docs/quickstart), [instrucciones del proyecto](https://learn.chatgpt.com/docs/agent-configuration/agents-md). Los entornos locales permiten compartir acciones y pasos de preparación en `.codex`; su configuración se genera desde la aplicación: [entornos locales](https://learn.chatgpt.com/docs/environments/local-environment). Esta entrega usa un preparador Python explícito y no depende de ajustes locales de Codex.
 
@@ -30,7 +32,17 @@ py -3 scripts/setup.py
 
 El entorno se prepara con la biblioteca estándar; `requirements.txt` documenta que no existen dependencias externas. No se necesita copiar `.venv` entre sistemas. Las rutas usadas por el código se calculan respecto al clon.
 
-## Recuperar el histórico del ordenador de origen
+## Realizar una nueva auditoría
+
+La lectura de la cuenta y la elaboración del informe no requieren la base SQLite anterior. Comprobar primero que las herramientas disponibles permiten leer la cuenta abierta por el usuario. Registrar periodo, filtros, moneda, zona horaria y fecha de extracción. Las sesiones locales del navegador no se presuponen accesibles desde otro entorno.
+
+Conservar las exportaciones y la evidencia nuevas en almacenamiento privado, con nombres nuevos. Utilizar el PDF previo como referencia documental. Una diferencia entre una lectura nueva y el PDF debe investigarse con su periodo y filtros; no demuestra por sí sola un error del informe anterior.
+
+Si se usa SQLite para organizar las nuevas fuentes, crear explícitamente una colección nueva con nombre propio y sin sustituir archivos existentes. Identificarla como nueva auditoría. No cargar datos del PDF ni de la demostración como si fueran las fuentes originales.
+
+## Recuperación opcional del ordenador de origen
+
+Este apartado solo se ejecuta si se desea recuperar los originales; su ausencia no bloquea el trabajo.
 
 ```bash
 python3 scripts/restore_private.py

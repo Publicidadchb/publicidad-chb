@@ -28,6 +28,8 @@ Las pruebas cubren importación de ZIP y CSV, repetición sin duplicados, umbral
 
 La demostración comprueba SQLite con datos ficticios. La validación del histórico real sigue pendiente de disponer de su base. El generador del informe original y los scripts que incorporan observaciones comerciales específicas no se reconstruyen como herramientas públicas; el PDF original se conserva localmente.
 
-## Límites pendientes
+## Recuperación opcional y límites
 
-Recuperar del ordenador original `chavez_auditoria.sqlite`, las exportaciones de `raw/`, sus manifiestos y demás archivos originales. `scripts/restore_private.py` automatiza la copia local cuando están disponibles en ese equipo. Esta entrega no publica datos privados, no conecta cuentas de Google y no configura sincronización desatendida.
+El 30 de octubre de 2026 el usuario confirmó que no necesita recuperar la base original: el PDF se conserva como antecedente y la auditoría puede realizarse de nuevo con acceso a Google Ads. La ausencia de los originales deja de ser un bloqueo para continuar. Las observaciones nuevas deben guardar su propia evidencia y distinguirse de las fuentes del informe anterior.
+
+Si se desea en el futuro, se podrán recuperar `chavez_auditoria.sqlite`, las exportaciones de `raw/`, sus manifiestos y demás archivos originales. `scripts/restore_private.py` automatiza esa copia opcional cuando están disponibles en el equipo de origen. Esta entrega no publica datos privados, no conecta cuentas de Google y no configura sincronización desatendida.

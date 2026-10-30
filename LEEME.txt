@@ -2,6 +2,8 @@ PUBLICIDAD CHB — CONTINUIDAD DEL PROYECTO
 
 Leer README.md, AGENTS.md y docs/CONTINUAR_EN_CODEX.md.
 Preparar: python3 scripts/setup.py (Windows: py -3 scripts/setup.py).
-Recuperar en el equipo original: python3 scripts/restore_private.py.
-El histórico real está pendiente de recuperación. La demostración usa datos ficticios.
+Decisión del 30 de octubre de 2026: recuperar la base original es opcional y no bloquea la continuidad.
+Conservar el PDF como antecedente; realizar una nueva auditoría con lecturas y exportaciones auténticas cuando el usuario abra y autorice Google Ads.
+Solo para recuperar originales si se desea: python3 scripts/restore_private.py.
+La demostración usa datos ficticios; no sustituye una auditoría real.
 private/, raw/, bases SQLite, informes y credenciales no se publican ni se sincronizan con Git.

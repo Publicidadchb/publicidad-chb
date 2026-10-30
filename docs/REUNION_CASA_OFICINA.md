@@ -1,5 +1,9 @@
 # Conectar casa y oficina — reunión del 28 de octubre de 2026
 
+## Nota vigente — 30 de octubre de 2026
+
+Esta guía conserva la propuesta de conexión remota del 28 de octubre como antecedente opcional. El usuario ha confirmado que recuperar la base original no es necesario para continuar. Conservar el PDF y los documentos existentes; se podrá hacer una nueva auditoría con acceso autorizado a Google Ads. Seguir primero [CONTINUAR_EN_CODEX.md](CONTINUAR_EN_CODEX.md). No ejecutar los pasos antiguos de recuperación o emparejamiento como requisitos automáticos, ni declarar sincronización sin comprobar el acceso a los archivos vigentes desde ambos equipos.
+
 ## Empezar aquí: guion para seguir juntos durante la reunión
 
 Todo lo que puede prepararse desde casa está guardado en este repositorio. La recuperación real y la conexión se harán cuando la persona de la empresa esté delante del Windows. No es necesario que esa persona programe: puede pegar el mensaje del apartado siguiente en Codex.

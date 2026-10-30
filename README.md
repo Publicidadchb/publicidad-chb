@@ -3,11 +3,13 @@ Auditoría marketing chb
 
 Herramientas locales en Python y SQLite para conservar exportaciones de Google Ads y Google Business Profile, sus revisiones y su evidencia.
 
-## Estado de la recuperación — 28 de octubre de 2026
+## Estado y continuidad — 30 de octubre de 2026
 
 Se recuperaron el importador y el esquema a partir de los cambios del trabajo original. Se adaptaron las pruebas para usar fuentes ficticias reproducibles. El README y el commit inicial de este repositorio se conservan.
 
-**El histórico real todavía no está en este clon.** El trabajo original se guardó en otro ordenador. El enlace compartido muestra el código, pero no ofrece los archivos binarios de la base ni las exportaciones originales para descargarlos. Las pruebas y la demostración verifican el funcionamiento del programa; no acreditan haber recuperado los datos históricos.
+**La base original no está en este clon y recuperarla es opcional.** El usuario ha confirmado que el PDF sirve como antecedente y que la auditoría puede hacerse de nuevo con acceso a Google Ads. Su ausencia no impide continuar. Conservar el PDF y los archivos existentes; registrar las nuevas lecturas y exportaciones con su periodo, fecha y procedencia, sin presentarlas como recuperación de las fuentes antiguas.
+
+El enlace compartido del trabajo anterior muestra el código, pero no ofrece los archivos binarios de la base ni las exportaciones originales para descargarlos. Las pruebas y la demostración verifican el funcionamiento del programa; no acreditan haber recuperado los datos históricos.
 
 Este repositorio es público. El informe con métricas internas, las bases, sus fuentes, los respaldos y las credenciales quedan fuera de Git. La carpeta `private/` es local y no se sincroniza al clonar.
 
@@ -38,11 +40,11 @@ En Windows, usar `.venv\Scripts\python.exe` en lugar de `.venv/bin/python`.
 
 ## Continuar desde otro ordenador con Codex
 
-Para trabajar desde casa y la oficina sobre la misma base, seguir [la guia de conexion para la reunion](docs/REUNION_CASA_OFICINA.md). Incluye un mensaje para pegar en Codex del Windows original y el lanzador `PREPARAR_OFICINA.cmd`. La conexion entre equipos sigue pendiente de emparejamiento; GitHub conserva el codigo y los datos privados permanecen en el equipo central.
+Para continuar desde casa y la oficina, seguir [la guía de continuidad](docs/CONTINUAR_EN_CODEX.md). La base original no es un requisito. GitHub conserva el código; el acceso compartido a los documentos y datos privados debe configurarse y comprobarse aparte. La [propuesta anterior de conexión remota](docs/REUNION_CASA_OFICINA.md) se conserva como antecedente opcional.
 
 Clonar este repositorio, abrir su carpeta como proyecto local de Codex y pedirle que siga `AGENTS.md` y [la guía de continuidad](docs/CONTINUAR_EN_CODEX.md). Esa guía contiene un mensaje listo para pegar, instrucciones de recuperación local y el flujo de sincronización sin sobrescrituras forzadas.
 
-En el ordenador donde se creó la auditoría, el recuperador puede localizar el directorio original automáticamente:
+Si en el futuro se desea recuperar los originales, el recuperador puede localizar su directorio en el equipo de origen:
 
 ```bash
 python3 scripts/restore_private.py

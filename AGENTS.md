@@ -2,9 +2,11 @@
 
 ## Contexto y continuidad
 
-Leer README.md, docs/MIGRACION.md y docs/CONTINUAR_EN_CODEX.md antes de trabajar. Es una herramienta local Python/SQLite. El código se recuperó del trabajo original; la base histórica real está pendiente de recuperación desde su ordenador de origen. Nunca confundir la demostración con datos de la empresa.
+Leer README.md, docs/MIGRACION.md y docs/CONTINUAR_EN_CODEX.md antes de trabajar. Es una herramienta local Python/SQLite. El código se recuperó del trabajo original; la base histórica original no se ha recuperado. Nunca confundir la demostración con datos de la empresa.
 
-Para trabajo entre casa y oficina, leer docs/REUNION_CASA_OFICINA.md. La propuesta es usar el Windows de la empresa como equipo central con una única base principal y acceder remotamente desde casa. Esta conexión todavía necesita emparejamiento y verificación. No afirmar que los datos se sincronizan por usar la misma cuenta, ni crear dos bases históricas independientes esperando que Git las mezcle. Antes de declarar conectado, comprobar el equipo real de ejecución, la ruta y la lectura de la base desde casa. El preparador de oficina no habilita acceso remoto y no sustituye esta comprobación.
+Decisión del usuario del 30 de octubre de 2026: recuperar la base original es opcional y no bloquea la continuidad. Conservar el PDF como antecedente y, cuando el usuario abra y autorice el acceso a Google Ads, realizar una nueva auditoría con lecturas y exportaciones auténticas. Registrar cuenta, periodo, filtros, fecha y procedencia; distinguir el informe anterior, las observaciones nuevas y los datos ficticios. No presentar una nueva extracción como recuperación de las fuentes antiguas. No volver a exigir la base original para trabajar.
+
+Para trabajo entre casa y oficina, leer docs/CONTINUAR_EN_CODEX.md. La propuesta de conexión remota en docs/REUNION_CASA_OFICINA.md queda como antecedente opcional, no como requisito. No afirmar que los datos se sincronizan por usar la misma cuenta, ni crear dos bases independientes esperando que Git las mezcle. Antes de declarar conectado, comprobar el entorno real de ejecución y el acceso desde ambos equipos a los archivos vigentes. El preparador de oficina solo sirve para la recuperación opcional; no habilita acceso remoto ni sincronización.
 
 ## Preparación y comprobaciones
 
@@ -12,7 +14,7 @@ Para trabajo entre casa y oficina, leer docs/REUNION_CASA_OFICINA.md. La propues
 - Ejecutar `python3 scripts/setup.py` (Windows: `py -3 scripts/setup.py`). Si no hay Python en PATH, buscar el intérprete ya proporcionado por el entorno de Codex antes de pedir instalaciones manuales.
 - Ejecutar pruebas con el Python de `.venv`: `python -m unittest -v test_pipeline`.
 - Antes de publicar, ejecutar `python scripts/check_public.py` y revisar el contenido y los archivos del commit. El detector no sustituye la revisión humana o del agente.
-- En el equipo original, ejecutar `python scripts/restore_private.py`; conserva originales, usa respaldo consistente de SQLite y no sustituye una base activa existente.
+- Solo si se solicita recuperar los originales, ejecutar en su equipo `python scripts/restore_private.py`; conserva originales, usa respaldo consistente de SQLite y no sustituye una base activa existente. No es un paso obligatorio para una nueva auditoría.
 
 ## Conservación y privacidad
 
